@@ -1,5 +1,5 @@
 RegisterCommand("policenow", function(source)
-    local agentsReady = exports['origen_police']:GetPlayersReadyByJob("police", true)
+    local agentsReady = QBCore.Functions.GetDutyCount('police')
     local policeCount = 0
 
     for _ in pairs(agentsReady) do
